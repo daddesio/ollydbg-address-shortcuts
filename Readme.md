@@ -10,7 +10,7 @@ This plugin adds the following menu options / shortcuts to OllyDbg v2.01:
 * **Copy RVA** &mdash; Similar to Alt+Ins in Olly, except that the address will be relative to the start of the module.
 * **Copy RVA (pretty)** (Alt+"+") &mdash; The string will be formatted as `helloworld+0x36a4`.
 * **Copy file offset** &mdash; Similar to Alt+Ins in Olly, except that the address will be relative to the start of the file.
-* **Copy file offset (pretty)** (Ctrl+"+") &mdash; The string will be formatted as `helloworld.dll+0x36a4`. **Note:** On most exe's (GCC, MSVC, etc.), the RVA and file offset are the same. This command matters mainly for hand-crafted executables such as demoscene.
+* **Copy file offset (pretty)** (Ctrl+"+") &mdash; The string will be formatted as `helloworld.dll+0x36a4`.
 
 **Note:** The "+" key is at the top row of the keyboard, *not* the number pad.
 
