@@ -55,7 +55,7 @@ enum copy_mode {
 };
 
 enum follow_mode {
-	asm,
+	disasm,
 	dump,
 	stack
 };
@@ -153,7 +153,7 @@ static int cb_follow(t_table *pt, wchar_t *name, ulong index, int mode)
 	}
 
 	switch (follow_mode) {
-	case asm:
+	case disasm:
 		Setcpu(0, address, 0, 0, 0, CPU_ASMHIST|CPU_ASMCENTER|CPU_ASMFOCUS);
 		break;
 	case dump:
@@ -196,7 +196,7 @@ static t_menu main_menu[] = {
 static t_menu right_click_menu[] = {
 	{ L"Follow DWORD in Disassembler",
 		L"Follow doubleword in CPU Disassembler",
-		KK_DIRECT|KK_CTRL|VK_RETURN, cb_follow, NULL, {asm} },
+		KK_DIRECT|KK_CTRL|VK_RETURN, cb_follow, NULL, {disasm} },
 	{ L"Follow DWORD in Dump",
 		L"Follow doubleword in CPU Dump",
 		KK_DIRECT|VK_RETURN, cb_follow, NULL, {dump} },
