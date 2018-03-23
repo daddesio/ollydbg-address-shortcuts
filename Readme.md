@@ -1,5 +1,7 @@
 ## Overview
 
+![OllyDbg Address Shortcuts](screenshot.png)
+
 This plugin adds the following menu options / shortcuts to OllyDbg v2.01:
 
 * **Follow DWORD in Disassember** (Ctrl+Enter)
