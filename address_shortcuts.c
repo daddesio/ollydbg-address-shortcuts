@@ -199,7 +199,10 @@ static t_menu right_click_menu[] = {
 		KK_DIRECT|KK_CTRL|VK_RETURN, cb_follow, NULL, {disasm} },
 	{ L"Follow DWORD in Dump",
 		L"Follow doubleword in CPU Dump",
-		KK_DIRECT|VK_RETURN, cb_follow, NULL, {dump} },
+		/* TODO: Can we make the follow-dword-in-dump shortcut Enter
+		** instead of Alt+Enter? On Enter, Olly pops open an Edit Bytes
+		** dialog that we'd have to silence. */
+		KK_DIRECT|KK_ALT|VK_RETURN, cb_follow, NULL, {dump} },
 	{ L"Follow DWORD in Stack",
 		L"Follow doubleword in CPU Stack",
 		0, cb_follow, NULL, {stack} },
